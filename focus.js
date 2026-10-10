@@ -31,8 +31,18 @@
     if (!animation) { previousTime = performance.now(); animation = requestAnimationFrame(animate); }
   }
   function release() { pointer = null; keyboardHolding = false; setHolding(false); }
+  // Suppress native long-press callouts only inside this interactive photograph.
+  photo.addEventListener('contextmenu', event => {
+    if (photo.classList.contains('is-enabled')) event.preventDefault();
+  });
+  photo.addEventListener('dragstart', event => {
+    if (photo.classList.contains('is-enabled')) event.preventDefault();
+  });
+  button.addEventListener('touchstart', event => event.preventDefault(), { passive: false });
   button.addEventListener('pointerdown', event => {
     if (!event.isPrimary || event.button !== 0) return;
+    event.preventDefault();
+    button.focus({ preventScroll: true });
     pointer = event.pointerId;
     button.setPointerCapture(pointer);
     setHolding(true);
