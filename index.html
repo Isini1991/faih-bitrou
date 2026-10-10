@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f3ec">
+  <meta name="description" content="Wedding photography and films by Faih Bitrou. Santorini and Athens.">
+  <title>Faih Bitrou — The way it felt.</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23f7f3ec'/%3E%3Ctext x='5' y='25' font-family='Georgia' font-size='27' fill='%2325211f'%3Ef%3C/text%3E%3C/svg%3E">
+  <link rel="preload" as="image" href="assets/memory.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="lens.css">
+  <script src="intro.js" defer></script>
+  <script src="focus.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#moments">Skip to photographs</a>
+  <div class="opening" id="opening" aria-label="Opening film" hidden>
+    <div class="opening-paper"></div>
+    <div class="opening-picture" id="opening-picture">
+      <img src="assets/memory.jpg" alt="" decoding="sync">
+      <div class="opening-glow" aria-hidden="true"></div>
+      <svg class="lens-iris" viewBox="0 0 300 400" preserveAspectRatio="none" aria-hidden="true">
+        <defs><mask id="iris-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="300" height="400"><rect width="300" height="400" fill="white"/><polygon class="iris-window" points="150,184 164,192 164,208 150,216 136,208 136,192" fill="black"/></mask></defs>
+        <g mask="url(#iris-mask)"><rect width="300" height="400" fill="#f7f3ec"/><g class="iris-seams"><path d="M150 200 Q110 100 0 45 M150 200 Q210 90 300 0 M150 200 Q265 185 300 110 M150 200 Q200 310 300 365 M150 200 Q95 315 0 400 M150 200 Q30 225 0 285"/></g></g>
+      </svg>
+      <svg class="frame-line" viewBox="0 0 300 400" preserveAspectRatio="none" aria-hidden="true"><rect x="1" y="1" width="298" height="398" pathLength="1"/></svg>
+    </div>
+    <div class="opening-title" aria-hidden="true"><span>FAIH</span><span>BITROU</span></div>
+    <p class="opening-caption">The way it felt.</p>
+    <span class="opening-note">A memory, coming into focus.</span>
+    <button class="skip-intro" id="skip-intro">Skip intro <span aria-hidden="true">↗</span></button>
+  </div>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="assets/memory.jpg" alt="A couple share a quiet kiss beneath a pearl-dotted wedding veil." fetchpriority="high">
+      <div class="hero-shade"></div>
+      <header class="site-header">
+        <a class="wordmark" href="#" aria-label="Faih Bitrou home">FAIH BITROU<span>PHOTOGRAPHY & FILMS</span></a>
+        <nav aria-label="Main navigation"><a href="#moments">Selected moments</a><a href="https://www.instagram.com/faih_bitrou/" target="_blank" rel="noopener noreferrer">Inquire <span aria-hidden="true">↗</span></a></nav>
+      </header>
+      <div class="hero-copy">
+        <p class="eyebrow">SANTORINI / ATHENS</p>
+        <h1 id="hero-title">The way<br><em>it felt.</em></h1>
+        <p class="hero-description">Wedding photography & films.</p>
+      </div>
+      <div class="hero-bottom"><a class="explore" href="#moments">Explore the moments <span aria-hidden="true">↓</span></a><button class="replay" id="replay-intro" aria-label="Replay the opening animation"><span aria-hidden="true">↺</span> Replay intro</button></div>
+      <span class="hero-index" aria-hidden="true">01 / A MEMORY</span>
+    </section>
+    <section class="moments" id="moments" aria-labelledby="moments-title">
+      <div class="section-heading"><p class="eyebrow">A FEW THINGS TO REMEMBER</p><h2 id="moments-title">The day.<br>The people.<br><em>The feeling.</em></h2></div>
+      <figure class="sea-photo">
+        <div class="focus-experience" id="focus-memory">
+          <img src="assets/santorini.jpg" alt="A couple beneath a veil overlooking the blue sea in Santorini." loading="lazy" width="1170" height="1560">
+          <span class="focus-corners" aria-hidden="true"></span>
+          <button class="focus-control" id="hold-focus" aria-pressed="false" aria-describedby="focus-instructions" hidden><span class="focus-dot" aria-hidden="true"></span><span id="focus-label">Hold to focus</span></button>
+        </div>
+        <p class="visually-hidden" id="focus-instructions">Hold the button, or hold Space or Enter, to focus the photograph. Release to return to the dream. Assistive technology can activate the button to toggle focus.</p>
+        <figcaption><span>A little closer.</span><span>SANTORINI</span></figcaption>
+      </figure>
+      <figure class="portrait-photo"><img src="assets/portrait.jpg" alt="A smiling bride holding coral roses." loading="lazy" width="3072" height="4096"><figcaption>And everything in between.</figcaption></figure>
+      <a class="contact-link" href="https://www.instagram.com/faih_bitrou/" target="_blank" rel="noopener noreferrer">Tell me about your day. <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+  <footer><span>© Faih Bitrou</span><a href="https://www.instagram.com/faih_bitrou/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></footer>
+  <noscript><style>.opening{display:none!important}</style></noscript>
+</body>
+</html>
